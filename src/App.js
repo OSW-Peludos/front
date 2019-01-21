@@ -13,7 +13,9 @@ class App extends Component {
         <Router>
           <div>
             <Navbar></Navbar>
-            <Roots></Roots>
+            <div className="content">
+              <Roots></Roots>
+            </div>
           </div>
         </Router>
       </div>
