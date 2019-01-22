@@ -1,6 +1,7 @@
 import axios from 'axios';
+import config from '../../config';
 
-const BASE_URL = 'https://peludos-osw-back.herokuapp.com';
+const BASE_URL = config.backendUrl;
 //const BASE_URL = 'http://localhost:3001';
 
 export { saveAnimal};
