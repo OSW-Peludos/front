@@ -1,117 +1,50 @@
-/* ** !!GENERAL ** */
-
-.c-card * {
-  display: block;
-  box-sizing: border-box;
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  margin:10px;
+  border-style:solid;
+  border-width:1px;
+  border-color:#636363;
+  max-width: 300px;
+  @media (min-width: 900px){
+    max-height: 300px;
+  }
+  @media (max-width: 900px){
+    max-height: 400px;
+  }
 }
-
-/* ** !!CARD ** */
-.card-container {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.c-card {
-  display: inline-block;
+img {
   width: 100%;
-  max-width: 350px;
-  margin: 20px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-align: left;
-  background: #fff;
-  box-shadow: 0 6px 10px -5px rgba(0, 0, 0, 0.2);
-}
-.c-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 20px 20px -15px rgba(0, 0, 0, 0.3);
-}
-.c-card__image {
-  max-width: 100%;
-}
-.c-card__body {
-  padding: 20px;
-}
-.c-card__title {
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 1.2;
-  margin: 0;
-  padding: 0;
-  text-transform: uppercase;
-}
-.c-card__subtitle {
-  font-size: 13px;
-  margin-top: 5px;
-  padding: 0;
-}
-.c-card__intro {
-  margin-bottom: 0;
-}
-.c-card__footer {
-  padding: 20px;
-  border-top: 1px solid #ddd;
+  object-fit: cover
+
 }
 
-/* ** !!CARD CENTER MODIFIER ** */
-.c-card--center {
-  text-align: center;
-}
+.img-container{
+  width: 100%;
 
-/* ** !!CARD WIDE MODIFIER ** */
-.c-card--wide {
-  max-width: 740px;
-}
-.c-card--wide .c-card__header {
-  float: left;
-}
-.c-card--wide .c-card__body {
-  float: left;
-  padding-top: 30px;
-}
-.c-card--wide .c-card__footer {
-  clear: both;
-  text-align: center;
-}
-
-/* ** !!CARD FLIP, ANOTHER BLOCK COMPONENT ** */
-.c-card-flip {
-  width: 450px;
-  height: 250px;
-  margin: 20px auto;
-  cursor: pointer;
-  perspective: 1000;
-  -webkit-perspective: 1000;
-}
-.c-card-flip__flipper {
+  /* big screen*/
+  @media (min-width: 900px){
+    max-height: 100px;
+  }
+  @media (max-width: 900px){
+    max-height: 200px;
+  }
+  overflow: hidden;
+  margin: 10px;
   position: relative;
-  transition: 0.8s ease-in-out;
-  transform-style: preserve-3d;
+
+  display: block;
+  margin: 0 auto;
+
 }
-.c-card-flip__front, .c-card-flip__back {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 450px;
-  height: 250px;
-  -webkit-perspective: 1000;
-  perspective: 1000;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-.c-card-flip__back {
-  transform: rotateY(180deg);
-  background: #ddd;
-}
-.c-card-flip__title {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 50px;
-  margin: auto;
-}
-.c-card-flip:hover .c-card-flip__flipper {
-  transform: rotateY(180deg);
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
 }

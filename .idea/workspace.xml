@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b401a7a-4c95-450a-9789-c59c492d697e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/Card.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ShortAnimalCard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/_tests_/smallCard.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/styles/AnimalGrid.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FoundList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FoundList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/services/animalListService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/services/animalListService.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/services/animalRegistryService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/services/animalRegistryService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/Card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Card.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/Navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/Navbar.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,22 +25,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/services/animalListService.js">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/FoundList.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/services/animalRegistryService.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="29" selection-start-column="7" selection-end-line="3" selection-end-column="35" />
+            <state relative-caret-position="345">
+              <caret line="36" column="58" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
               <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#41#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -43,8 +40,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Navbar.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="12" column="20" selection-start-line="11" selection-start-column="12" selection-end-line="12" selection-end-column="20" />
+            <state relative-caret-position="230">
+              <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -53,19 +50,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Home.jsx">
+        <entry file="file://$PROJECT_DIR$/src/components/Roots.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+            <state relative-caret-position="-207">
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -74,31 +61,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.css">
+        <entry file="file://$PROJECT_DIR$/src/components/ShortAnimalCard.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/FoundList.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+            <state relative-caret-position="403">
+              <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -106,20 +75,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/styles/Card.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="598">
+              <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/_tests_/foundList.test.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="357">
+              <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -146,29 +112,35 @@
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/Navbar.jsx" />
         <option value="$PROJECT_DIR$/src/App.css" />
-        <option value="$PROJECT_DIR$/src/styles/Navbar.scss" />
         <option value="$PROJECT_DIR$/src/components/services/foundAnimalsService.js" />
         <option value="$PROJECT_DIR$/src/components/services/animalsService.js" />
-        <option value="$PROJECT_DIR$/src/components/_tests_/foundList.test.js" />
-        <option value="$PROJECT_DIR$/src/components/FoundList.jsx" />
-        <option value="$PROJECT_DIR$/src/styles/Card.scss" />
         <option value="$PROJECT_DIR$/src/config.js" />
-        <option value="$PROJECT_DIR$/src/components/services/animalListService.js" />
         <option value="$PROJECT_DIR$/src/components/services/animalRegistryService.js" />
+        <option value="$PROJECT_DIR$/src/components/ShortAnimalCard.js" />
+        <option value="$PROJECT_DIR$/src/components/_tests_/foundList.test.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/src/styles/AnimalGrid.scss" />
+        <option value="$PROJECT_DIR$/src/components/_tests_/smallCard.test.js" />
+        <option value="$PROJECT_DIR$/src/components/services/animalListService.js" />
+        <option value="$PROJECT_DIR$/src/styles/Navbar.scss" />
+        <option value="$PROJECT_DIR$/src/styles/Card.scss" />
+        <option value="$PROJECT_DIR$/src/components/ShortAnimalCard.jsx" />
+        <option value="$PROJECT_DIR$/src/components/FoundList.jsx" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2500" />
-    <option name="y" value="40" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="x" value="1980" />
+    <option name="y" value="129" />
+    <option name="width" value="2483" />
+    <option name="height" value="789" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -181,16 +153,21 @@
               <item name="front" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="front" type="b2602c69:ProjectViewProjectNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../back" />
     <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -198,6 +175,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/_tests_" />
       <recent name="$PROJECT_DIR$/src/components/services" />
     </key>
   </component>
@@ -213,7 +191,34 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.List of lost animals is shown.shows the list of last lost animals">
+  <component name="RunManager" selected="Jest.Animal card is displayed properly">
+    <configuration name="Animal card is displayed properly" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/components/_tests_/smallCard.test.js" />
+      <test-names>
+        <test-name value="Animal card is displayed properly" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Animal card is displayed properly.icons and fields are shown" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/components/_tests_/smallCard.test.js" />
+      <test-names>
+        <test-name value="Animal card is displayed properly" />
+        <test-name value="icons and fields are shown" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="Available info is shown.shows available info for city" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -242,8 +247,21 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="Jest.Animal card is displayed properly" />
+        <item itemvalue="Jest.Animal card is displayed properly.icons and fields are shown" />
         <item itemvalue="Jest.List of lost animals is shown.shows the list of last lost animals" />
         <item itemvalue="Jest.Available info is shown.shows available info for city" />
       </list>
@@ -262,52 +280,105 @@
       <workItem from="1548081164298" duration="8286000" />
       <workItem from="1548144614929" duration="4506000" />
       <workItem from="1548155039034" duration="2879000" />
-      <workItem from="1548171362665" duration="285000" />
+      <workItem from="1548171362665" duration="1582000" />
+      <workItem from="1548231969191" duration="1305000" />
+      <workItem from="1548233289914" duration="19895000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Available_info_is_shown_shows_available_info_for_city - 2019.01.21 at 17h 26m 13s.xml">
-      <configuration name="Available info is shown.shows available info for city" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Animal_card_is_displayed_properly_icons_and_fields_are_shown - 2019.01.23 at 12h 10m 20s.xml">
+      <configuration name="Animal card is displayed properly.icons and fields are shown" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Available_info_is_shown_shows_available_info_for_city - 2019.01.21 at 17h 26m 33s.xml">
-      <configuration name="Available info is shown.shows available info for city" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Animal_card_is_displayed_properly_icons_and_fields_are_shown - 2019.01.23 at 12h 10m 43s.xml">
+      <configuration name="Animal card is displayed properly.icons and fields are shown" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="Available_info_is_shown_shows_available_info_for_city - 2019.01.21 at 17h 28m 06s.xml">
-      <configuration name="Available info is shown.shows available info for city" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Animal_card_is_displayed_properly_icons_and_fields_are_shown - 2019.01.23 at 12h 17m 17s.xml">
+      <configuration name="Animal card is displayed properly.icons and fields are shown" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="List_of_lost_animals_is_shown_shows_the_list_of_last_lost_animals - 2019.01.21 at 17h 33m 24s.xml">
-      <configuration name="List of lost animals is shown.shows the list of last lost animals" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Animal_card_is_displayed_properly_icons_and_fields_are_shown - 2019.01.23 at 12h 17m 45s.xml">
+      <configuration name="Animal card is displayed properly.icons and fields are shown" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Animal_card_is_displayed_properly_icons_and_fields_are_shown - 2019.01.23 at 13h 30m 02s.xml">
+      <configuration name="Animal card is displayed properly.icons and fields are shown" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Animal_card_is_displayed_properly_icons_and_fields_are_shown - 2019.01.23 at 13h 30m 51s.xml">
+      <configuration name="Animal card is displayed properly.icons and fields are shown" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Animal_card_is_displayed_properly_icons_and_fields_are_shown - 2019.01.23 at 13h 31m 18s.xml">
+      <configuration name="Animal card is displayed properly.icons and fields are shown" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Animal_card_is_displayed_properly - 2019.01.23 at 13h 32m 26s.xml">
+      <configuration name="Animal card is displayed properly" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Animal_card_is_displayed_properly - 2019.01.23 at 13h 32m 43s.xml">
+      <configuration name="Animal card is displayed properly" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="Animal_card_is_displayed_properly - 2019.01.23 at 13h 36m 28s.xml">
+      <configuration name="Animal card is displayed properly" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15956000" />
+    <option name="totallyTimeSpent" value="38453000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1987" y="25" width="2493" height="1055" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18825911" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49416342" visible="true" weight="0.18825911" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="npm" order="2" sideWeight="0.50583655" side_tool="true" visible="true" weight="0.18825911" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32894737" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991228" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.4364035" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.4364035" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49610895" visible="true" weight="0.18825911" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" sideWeight="0.50389105" side_tool="true" weight="0.18825911" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32894737" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32894737" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3991228" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.4364035" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/_tests_/smallCard.test.js</url>
+          <line>40</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/components/FoundCard.jsx">
@@ -329,26 +400,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/Navbar.scss">
+    <entry file="file://$PROJECT_DIR$/src/components/services/animalRegistryService.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/services/animalListService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" selection-start-line="1" selection-end-line="3" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Navbar.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="12" column="20" selection-start-line="11" selection-start-column="12" selection-end-line="12" selection-end-column="20" />
+        <state relative-caret-position="46">
+          <caret line="3" column="29" selection-start-column="7" selection-end-line="3" selection-end-column="35" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -377,16 +434,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/FoundList.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -394,29 +441,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/Card.scss">
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/react.d.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="158">
+          <caret line="990" column="8" selection-start-line="990" selection-start-column="8" selection-end-line="990" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/services/animalRegistryService.js">
+    <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="29" selection-start-column="7" selection-end-line="3" selection-end-column="35" />
+        <state relative-caret-position="357">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/AnimalGrid.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/_tests_/smallCard.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="43" column="93" selection-start-line="43" selection-start-column="93" selection-end-line="43" selection-end-column="93" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/_tests_/foundList.test.js">
+    <entry file="file://$PROJECT_DIR$/src/styles/Navbar.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        <state relative-caret-position="276">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/services/animalListService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/Card.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="26" column="28" lean-forward="true" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Roots.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-207">
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/_tests_/foundList.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Navbar.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ShortAnimalCard.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="47" column="42" selection-start-line="47" selection-start-column="42" selection-end-line="47" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/FoundList.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="36" column="58" selection-start-line="36" selection-start-column="58" selection-end-line="36" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
           </folding>
         </state>
       </provider>
