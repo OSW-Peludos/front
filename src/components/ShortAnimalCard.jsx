@@ -14,11 +14,11 @@ class ShortAnimalCard extends Component {
         this.state = {record:props.record}
     }
     render() {
-        if(this.state.record){
+        if(this.props.record){
             return (<div className="card">
-                {this.getImage(this.state.record)}
+                {this.getImage(this.props.record)}
                 <div className="container">
-                    {this.getDescription(this.state.record)}
+                    {this.getDescription(this.props.record)}
                 </div>
             </div>);
         }
