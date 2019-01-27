@@ -5,7 +5,7 @@
 /* FONT IMPORTED */
 
 /* Fira Sans */
-@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+// @import url("https://fonts.googleapis.com/css?family=Fira+Sans");
 
 #container {
   width: 100%;
@@ -16,6 +16,7 @@
 
 /** NAVIGATION BAR */
 nav {
+  z-index: 100;
   overflow: hidden;
   background-color: #383838;
   position: fixed;
@@ -29,7 +30,6 @@ nav {
     padding: 15px;
     li {
       display: inline;
-      font-family: "Fira Sans", sans-serif;
       font-size: 17px;
       a {
         color: #f2f2f2;
