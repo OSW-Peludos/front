@@ -45,7 +45,6 @@ class ShortAnimalCard extends Component {
             return(<div>
                 <p className="description">{animalIcon}  {this.getRace(record)}  {this.getSize(record)}  {this.getColor(record)}</p>
                 <p>{this.getDateText(record)}</p>
-                <p>{this.state.record._id}</p>
                 </div>);
         }
     }

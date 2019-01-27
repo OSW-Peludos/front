@@ -11,7 +11,7 @@ export class FoundList extends Component {
         super(props);
         this.state = {listFound: null,
             totalItemsCount:null,
-            itemsCountPerPage:4,
+            itemsCountPerPage:6,
             activePage: 1}
     }
     async componentDidMount() {
