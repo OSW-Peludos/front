@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
-import {postFichaPerdidos} from '../services/services';
+import {saveAnimal} from './services/animalRegistryService';
 
 class LostForm extends Component {
     constructor(props) {
@@ -23,10 +23,31 @@ class LostForm extends Component {
     }
     handleClick = (e) => {
         e.preventDefault();
-        postFichaPerdidos(this.state)
+        const request = this.converToAnimalRequest()
+        saveAnimal(request) // llamada al backend
           .then((res) => console.log(res))
           .catch((err) => console.log(err));
        
+    }
+
+    //funcion de formateo JSON sin el state
+    converToAnimalRequest = () => {
+        //obervation: this.state.direccion, serian las coordenadar
+        // faltaria añadir la imagen
+       return {
+                animal: {
+                    animalType: this.state.animal,
+                    animalRace: this.state.raza,
+                    obervation: this.state.caracteristicas,
+                    },
+                contact:{
+                    contacName: this.state.nombre,
+                    contactEmail: this.state.email
+                    },
+                status:"lost",
+                date: new Date()
+            }
+
     }
 
     render() {

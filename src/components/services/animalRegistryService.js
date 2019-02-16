@@ -7,7 +7,7 @@ const BASE_URL = config.backendUrl;
 export { saveAnimal};
 
 const saveAnimal = (animal) => {
-    const url = `${BASE_URL}/api/save_pet`;
+    const url = `${BASE_URL}/api/registry/save_pet`;
     //axios.defaults.headers.common['Authorization'] = localStorage.getItem('jwtToken');
     return axios.post(url, animal).then(response => response.data);
 }
