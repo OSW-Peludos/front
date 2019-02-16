@@ -4,6 +4,22 @@
     margin-left: 100px;
   }
 }
+.container{
+  margin-left: 35%;
+  margin-right: 35%;
+}
+.lost{
+  text-align: center;
+}
+.inputLost {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin-top: 5%;
+}
+.send{
+  float: right;
+}
 
 @media screen and (min-width: 1000px) {
   .content {
