@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import '../App.css';
+import '../../App.css';
 import {saveAnimal} from '../services/animalRegistryService';
 
 class LostForm extends Component {
@@ -14,8 +14,14 @@ class LostForm extends Component {
             email:'',
             photo: undefined,
             saved: false,
+            latitude: 0,
+            longitude: 0,
         }
         this.handleChange = this.handleChange.bind(this);
+    }
+
+    componentDidMount(){
+        this.getLocation()
     }
     handleChange (e) {
         this.setState({
@@ -31,8 +37,10 @@ class LostForm extends Component {
        
     }
 
-    handlefile(ev){
-        this.setState({photo: ev.target.files[0]})
+    handlefile = (ev)=>{
+        if(ev.target.files){
+            this.setState({photo: ev.target.files[0]})
+        }
     }
 
     //funcion de formateo JSON sin el state
@@ -80,6 +88,21 @@ class LostForm extends Component {
         }
 
 
+    }
+
+    async getLocation(){
+        try {
+            await navigator.geolocation.getCurrentPosition(pos => {
+                const {latitude, longitude } = pos.coords
+                this.setState({
+                    latitude,
+                    longitude,
+                }, console.log(pos))
+            })
+
+        } catch(err){
+            console.log(err)
+        }
     }
 
     render() {
