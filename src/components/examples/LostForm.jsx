@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
-import {saveAnimal} from './services/animalRegistryService';
+import {saveAnimal} from '../services/animalRegistryService';
 
 class LostForm extends Component {
     constructor(props) {
@@ -12,7 +12,8 @@ class LostForm extends Component {
             caracteristicas:'',
             nombre:'',
             email:'',
-            photo: undefined
+            photo: undefined,
+            saved: false,
         }
         this.handleChange = this.handleChange.bind(this);
     }
@@ -54,6 +55,33 @@ class LostForm extends Component {
 
     }
 
+    async sendForm(){
+        const data = new FormData()
+        data.append('animal', this.state.animal)
+        data.append('raza', this.state.raza)
+        data.append('caracteristicas', this.state.caracteristicas)
+        data.append('nombre', this.state.nombre)
+        data.append('email', this.state.email)
+        data.append('image', this.state.photo)
+        try {
+            const saved = await saveAnimal(data)
+            this.setState({
+                direccion:'',
+                animal:'',
+                raza:'',
+                caracteristicas:'',
+                nombre:'',
+                email:'',
+                photo: undefined,
+                saved: (saved)
+            })
+        } catch (error) {
+            console.error(error)
+        }
+
+
+    }
+
     render() {
         return (
             <form className="lost">
@@ -82,6 +110,7 @@ class LostForm extends Component {
                 <input type="submit" value="Enviar" className="send" onClick={this.handleClick} />
             
                 <p>{JSON.stringify(this.state)}</p>
+                <button type="submit" onClick={ this.sendForm }>Enviar</button>
              </form>
             );
     }
