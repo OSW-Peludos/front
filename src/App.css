@@ -2,6 +2,7 @@
   .content {
     margin-top: 90px;
     margin-left: 100px;
+    margin-right: 100px;
   }
 }
 .container{
@@ -17,13 +18,18 @@
   padding: 5px;
   margin-top: 5%;
 }
+.img{
+  width: 10%;
+  float: left;
+}
 .send{
-  float: right;
+  float: initial;
 }
 
 @media screen and (min-width: 1000px) {
   .content {
     margin-top: 90px;
     margin-left: 20%;
+    margin-right: 20%;
   }
 }
