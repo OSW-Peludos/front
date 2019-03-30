@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {animalRecordsFound} from "./services/animalListService";
+import {animalRecordsFound} from "./services/animalsService";
 import {Link} from "react-router-dom";
 import "../styles/AnimalGrid.scss";
 import ShortAnimalCard from './ShortAnimalCard';

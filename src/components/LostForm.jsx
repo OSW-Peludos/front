@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../App.css';
-import {saveAnimal} from './services/animalRegistryService';
+import {saveAnimal} from './services/animalsService';
 
 class LostForm extends Component {
     constructor(props) {
