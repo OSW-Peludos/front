@@ -7,7 +7,7 @@ export { postFichaPerdidos };
 // /stateExecution/state-execution-airbnb-scraping?skip=0&limit=2
 const postFichaPerdidos = () => {
     
-    alert("hola")
+    
     
     //let json = JSON.stringify(this.state)
     const url = `${BASE_URL}/stateExecution/`;
