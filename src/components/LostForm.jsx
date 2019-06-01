@@ -10,6 +10,7 @@ class LostForm extends Component {
             raza:'',
             caracteristicas:'',
             nombre:'',
+            phone: '',
             email:'',
             image: '',
             latitude: 0,
@@ -50,7 +51,8 @@ class LostForm extends Component {
 
                     },
                 contact:{
-                    contacName: this.state.nombre,
+                    contactName: this.state.nombre,
+                    contactPhone: this.state.phone,
                     contactEmail: this.state.email
                     },
                 status:"lost",
@@ -94,13 +96,13 @@ class LostForm extends Component {
             <div className="lost">
                 <img id="target" src={this.state.image} className="img"/>
                 <input type="file" placeholder="Subir foto" onChange={this.onImageChange} 
-                className="inputLost" id="group_image" accept="image/x-png,image/gif,image/jpeg"/>
+                className="selectImage" id="group_image" accept="image/x-png,image/gif,image/jpeg"/>
                 <select value={this.state.animal} onChange={this.handleChange} 
                     name="animal" type="text" placeholder="Animal" className="inputLost">
-                    <option>Selecciona Animal</option>
-                    <option>Perro</option>
-                    <option>Gato</option>
-                    <option>Pajaro</option>
+                    <option className="option">Selecciona Animal</option>
+                    <option className="option" value="dog">Perro</option>
+                    <option className="option" value="cat">Gato</option>
+                    <option className="option">Pajaro</option>
                 </select>
                 <input value={this.state.raza} onChange={this.handleChange}
                     name="raza" type="text" placeholder="Raza" className="inputLost" />
@@ -108,9 +110,11 @@ class LostForm extends Component {
                 name="caracteristicas" type="text" placeholder="Caracteristicas" className="inputLost">
                 </textarea >
                 <input value={this.state.nombre} onChange={this.handleChange} 
-                    name="nombre" type="text" placeholder="Nombre contacto" className="inputLost" />
+                    name="nombre" type="text" placeholder="Nombre de contacto" className="inputLost" />
+                    <input value={this.state.phone} onChange={this.handleChange} 
+                    name="phone" type="number" placeholder="Telefono de contacto" className="inputLost" />
                 <input value={this.state.email} onChange={this.handleChange} 
-                    name="email" type="email" placeholder="Email contacto" className="inputLost" />
+                    name="email" type="email" placeholder="Email de contacto" className="inputLost" />
                 <input type="submit" value="Enviar" className="send" onClick={this.handleClick} />
             
                 <p>{JSON.stringify(this.state)}</p>
