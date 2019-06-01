@@ -2,6 +2,7 @@
   .content {
     margin-top: 90px;
     margin-left: 100px;
+    margin-right: 100px;
   }
 }
 .container{
@@ -16,14 +17,42 @@
   width: 100%;
   padding: 5px;
   margin-top: 5%;
+  border: 0;
+  outline: none;
+  border-bottom: 1px solid #2d2d2d;
+}
+.option{
+  color: #58efce;
+}
+.selectImage {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  margin-top: 5%;
+  border: 0;
+ 
+}
+::placeholder {
+  color: #58efce;
+}
+
+.img{
+  width: 10%;
+  float: left;
 }
 .send{
-  float: right;
+  float: initial;
+  padding: 5px;
+  margin-top: 5%;
+  color: #58efce;
+  background: #2d2d2d;
+  border: 0;
 }
 
 @media screen and (min-width: 1000px) {
   .content {
     margin-top: 90px;
     margin-left: 20%;
+    margin-right: 20%;
   }
 }

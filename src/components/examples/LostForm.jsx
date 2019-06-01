@@ -1,24 +1,25 @@
 import React, { Component } from 'react';
-import '../App.css';
-import {saveAnimal} from './services/animalsService';
+import '../../App.css';
+import {saveAnimal} from '../services/animalRegistryService';
 
 class LostForm extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            direccion:'',
             animal:'',
             raza:'',
             caracteristicas:'',
             nombre:'',
-            phone: '',
             email:'',
-            image: '',
+            photo: undefined,
+            saved: false,
             latitude: 0,
             longitude: 0,
-            
         }
         this.handleChange = this.handleChange.bind(this);
     }
+
     componentDidMount(){
         this.getLocation()
     }
@@ -36,6 +37,12 @@ class LostForm extends Component {
        
     }
 
+    handlefile = (ev)=>{
+        if(ev.target.files){
+            this.setState({photo: ev.target.files[0]})
+        }
+    }
+
     //funcion de formateo JSON sin el state
     converToAnimalRequest = () => {
         //obervation: this.state.direccion, serian las coordenadar
@@ -45,14 +52,9 @@ class LostForm extends Component {
                     animalType: this.state.animal,
                     animalRace: this.state.raza,
                     obervation: this.state.caracteristicas,
-                    photo: this.state.image,
-                    latitude: this.state.latitude,
-                    longitude: this.state.longitude
-
                     },
                 contact:{
-                    contactName: this.state.nombre,
-                    contactPhone: this.state.phone,
+                    contacName: this.state.nombre,
                     contactEmail: this.state.email
                     },
                 status:"lost",
@@ -60,6 +62,34 @@ class LostForm extends Component {
             }
 
     }
+
+    async sendForm(){
+        const data = new FormData()
+        data.append('animal', this.state.animal)
+        data.append('raza', this.state.raza)
+        data.append('caracteristicas', this.state.caracteristicas)
+        data.append('nombre', this.state.nombre)
+        data.append('email', this.state.email)
+        data.append('image', this.state.photo)
+        try {
+            const saved = await saveAnimal(data)
+            this.setState({
+                direccion:'',
+                animal:'',
+                raza:'',
+                caracteristicas:'',
+                nombre:'',
+                email:'',
+                photo: undefined,
+                saved: (saved)
+            })
+        } catch (error) {
+            console.error(error)
+        }
+
+
+    }
+
     async getLocation(){
         try {
             await navigator.geolocation.getCurrentPosition(pos => {
@@ -74,51 +104,37 @@ class LostForm extends Component {
             console.log(err)
         }
     }
-    onImageChange = (event) => {
-        if (event.target.files && event.target.files[0]) {
-          let reader = new FileReader();
-          reader.onload = (e) => {
-            this.setState({image: e.target.result});
-          };
-          reader.readAsDataURL(event.target.files[0]);
-        }
-      }
-      onImageChange = (event) => {
-        if (event.target.files && event.target.files[0]) {
-          this.setState({
-            image: URL.createObjectURL(event.target.files[0])
-          });
-        }
-       }
 
     render() {
         return (
-            <div className="lost">
-                <img id="target" src={this.state.image} className="img"/>
-                <input type="file" placeholder="Subir foto" onChange={this.onImageChange} 
-                className="selectImage" id="group_image" accept="image/x-png,image/gif,image/jpeg"/>
+            <form className="lost">
+                
+                <input value={this.state.direccion} onChange={this.handleChange} 
+                    name="direccion" type="text" placeholder="Direccion" className="inputLost" />
                 <select value={this.state.animal} onChange={this.handleChange} 
                     name="animal" type="text" placeholder="Animal" className="inputLost">
-                    <option className="option">Selecciona Animal</option>
-                    <option className="option" value="dog">Perro</option>
-                    <option className="option" value="cat">Gato</option>
-                    <option className="option">Pajaro</option>
+                    <option>Selecciona</option>
+                    <option>Perro</option>
+                    <option>Gato</option>
                 </select>
-                <input value={this.state.raza} onChange={this.handleChange}
-                    name="raza" type="text" placeholder="Raza" className="inputLost" />
+                <select value={this.state.animal} onChange={this.handleChange}
+                    name="raza" type="text" placeholder="Raza" className="inputLost">
+                    <option>Selecciona</option>
+                    <option>raza</option>
+                </select>
                 <textarea value={this.state.caracteristicas} onChange={this.handleChange}
                 name="caracteristicas" type="text" placeholder="Caracteristicas" className="inputLost">
                 </textarea >
+                <input type="file" placeholder="Subir foto" className="inputLost" onChange={this.handlefile}/>
                 <input value={this.state.nombre} onChange={this.handleChange} 
-                    name="nombre" type="text" placeholder="Nombre de contacto" className="inputLost" />
-                    <input value={this.state.phone} onChange={this.handleChange} 
-                    name="phone" type="number" placeholder="Telefono de contacto" className="inputLost" />
+                    name="nombre" type="text" placeholder="Nombre" className="inputLost" />
                 <input value={this.state.email} onChange={this.handleChange} 
-                    name="email" type="email" placeholder="Email de contacto" className="inputLost" />
+                    name="email" type="email" placeholder="Email" className="inputLost" />
                 <input type="submit" value="Enviar" className="send" onClick={this.handleClick} />
             
                 <p>{JSON.stringify(this.state)}</p>
-             </div>
+                <button type="submit" onClick={ this.sendForm }>Enviar</button>
+             </form>
             );
     }
 }
